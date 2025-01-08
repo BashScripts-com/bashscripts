@@ -12,6 +12,6 @@
 <br>
 
 <p align="left">
-1. <strong>Remote_Wireshark.sh</strong> - Capture and view traffic from a remote device (tcpdump) and view it with WIRESHARK on your local device/computer in real-time. 
+1. <strong>Remote_Wireshark.sh</strong> - Capture traffic from a remote device (via tcpdump) and view it with WIRESHARK on your local device/computer in real-time. 
 
 </p>
