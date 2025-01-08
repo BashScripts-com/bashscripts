@@ -10,7 +10,8 @@
 #		     2) Tcpdump installed on REMOTE DEVICE (router, etc.)
 #		     3) SSH already setup between the devices
 #
-#     The script will prompt you to enter the remote device IP, the remote interface to listen on, capture snaplength, and specific host to filter (optional)
+#     Run the script on your LOCAL device (i.e. computer). The script will prompt you to enter the remote device IP, 
+#     the remote interface to listen on, capture snaplength, and specific host to filter (optional)
 
 
 
@@ -32,9 +33,6 @@ echo ""
 read -p "What snaplength should we use (type 0 for no limit)? " snaplength
 echo "snaplength size is "$snaplength""
 echo ""
-#read -p "How many packets should we capture before exiting ? " packet_count
-#echo "capturing "$packet_count" packets"
-#echo ""
 
 
 read -p "Filter for a specific host ? (enter IP address)(just press ENTER if you don't want a specific host and want all traffic instead) " filter_host
