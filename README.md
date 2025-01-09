@@ -15,5 +15,7 @@
 1. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Remote_Wireshark.sh">Remote Wireshark.sh</a></strong> - Capture traffic from a remote device (via tcpdump) and view it with WIRESHARK on your local device/computer in real-time. 
   <br><br>
 2. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Website_Error_Monitoring.sh">Website Error Monitoring.sh</a></strong> - Check a website for HTTP response code errors using CURL. Can run continuously in a loop every X minutes. 
+  <br><br>
+3. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Check_Duplicate_Files.sh">Check Duplicate Files.sh</a></strong> - Check any directory for duplicate files. Use MD5SUM to get the hash of each file and output any duplicates.
   
 </p>
