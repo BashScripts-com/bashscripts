@@ -12,6 +12,8 @@
 <br>
 
 <p align="left">
-1. <strong>Remote_Wireshark.sh</strong> - Capture traffic from a remote device (via tcpdump) and view it with WIRESHARK on your local device/computer in real-time. 
-
+1. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Remote_Wireshark.sh">Remote_Wireshark.sh</a></strong> - Capture traffic from a remote device (via tcpdump) and view it with WIRESHARK on your local device/computer in real-time. 
+  <br><br>
+2. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Website_Error_Monitoring.sh">Website_Error_Monitoring.sh</a></strong> - Check a website for HTTP response code errors using CURL. Can run continuously in a loop every X minutes. 
+  
 </p>
