@@ -20,9 +20,6 @@ subnets=('192.168.1.1/24' '192.168.2.1/24' '192.168.3.1/24' '192.168.10.1/24' '1
 
 
 
-
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
 DATE="$(date +%d-%b---%H-%M-%S)"
 RESULTS_DIRECTORY="$PWD/nmap_scan_script/results/${DATE}"
 
