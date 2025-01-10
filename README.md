@@ -21,5 +21,9 @@
 4. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Nmap_Host_Scan.sh">Nmap Host Scan.sh</a></strong> - Perform a basic "host discovery" scan with nmap on multiple networks and create output files with scan results.
   <br><br>
 5. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Domain_Availability_Checker.sh">Domain Availability Checker.sh</a></strong> - search for available (unregistered) .COM domains from the command line. Provide a list of domains and the script will do a WHOIS lookup for each name.
+  <br><br>
+6. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Generate_File_Hashes.sh">Generate File Hashes.sh</a></strong> - Generate a list of file hashes for a given directory using MD5SUM.
+
+
   
 </p>
