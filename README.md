@@ -3,7 +3,7 @@
 <h3 align="center">Bash scripts for random things (Networking, Devops, Monitoring, Security, etc.)</h3>
 
   <p align="center">
-    A wide range of random useful bash scripts for networking, monitoring, devops, security, and other Linux/CLI things.
+    Random useful bash scripts for networking, monitoring, devops, security, and other Linux/CLI things.
     <br />
 
   </p>
