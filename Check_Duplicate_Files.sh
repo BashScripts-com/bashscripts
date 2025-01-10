@@ -14,10 +14,6 @@
 
 
 
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
-
-
 TEMP_HASH_LIST="/tmp/temp_hash_list.txt"
 
 echo -e "\n"
