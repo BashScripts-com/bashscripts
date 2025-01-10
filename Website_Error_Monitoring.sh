@@ -19,9 +19,6 @@
 #		until you exit (CTRL+C)
 #
 
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
-
 
 
 DATE_SHORT="$(date +%d-%b-%Y)"
