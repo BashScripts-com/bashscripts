@@ -16,8 +16,6 @@
 
 
 
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
 
 WIRESHARK_NAMED_PIPE="/tmp/wireshark_named_pipe"
 
