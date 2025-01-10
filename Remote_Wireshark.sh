@@ -1,19 +1,18 @@
 #!/bin/bash
-
-# ###############  BASHSCRIPTS.com  #################
-# ###################################################
-    
-#    Summary:  Capture traffic on a REMOTE device and view it LOCALLY on your computer via WIRESHARK in real-time.
-#    This captures all traffic except SSH traffic (otherwise you would capture your own ssh session)
 #
-#      Requirements: 1) Wireshark installed on LOCAL DEVICE (your computer)
-#		     2) Tcpdump installed on REMOTE DEVICE (router, etc.)
-#		     3) SSH already setup between the devices
+#        BashScripts.com  
+#        Github: https://github.com/BashScripts-com
+# 
 #
-#     Run the script on your LOCAL device (i.e. computer). The script will prompt you to enter the remote device IP, 
-#     the remote interface to listen on, capture snaplength, and specific host to filter (optional)
-
-
+#    		Summary:  Capture traffic on a REMOTE device and view it LOCALLY on your computer via WIRESHARK in real-time.
+#    		This captures all traffic except SSH traffic (otherwise you would capture your own ssh session)
+#
+#      		Requirements:   1) Wireshark installed on LOCAL DEVICE (your computer)
+#		     		2) Tcpdump installed on REMOTE DEVICE (router, etc.)
+#		     	 	3) SSH already setup between the devices
+#
+#     		Run the script on your LOCAL device (i.e. computer). The script will prompt you to enter the remote device IP, 
+#     		the remote interface to listen on, capture snaplength, and specific host to filter (optional)
 
 
 
