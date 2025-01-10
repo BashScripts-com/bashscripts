@@ -1,6 +1,8 @@
 #!/bin/bash
-
-#	BASHSCRIPTS.com
+#
+#        BashScripts.com  
+#        Github: https://github.com/BashScripts-com
+#
 #
 #		Summary: Generate a list of hashes for all files in a given directory
 #			
