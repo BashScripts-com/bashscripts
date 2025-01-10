@@ -1,6 +1,8 @@
 #!/bin/bash
-
-#	BASHSCRIPTS.com
+#
+#        BashScripts.com  
+#        Github: https://github.com/BashScripts-com
+#
 #
 #		Summary:  use NMAP to do a basic discovery scan (-sn) of your networks. Place each subnet/network
 #		that you want to scan into the array below (i.e. '192.168.1.1/24'). Replace the example subnets based on
