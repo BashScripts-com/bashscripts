@@ -1,22 +1,22 @@
 #!/bin/bash
-
-###########     BASHSCRIPTS.com    ##############
-##
-##		Summary: Monitor website uptime/errors using CURL
 #
-#		Requirements: CURL
-#
-#		Simply run the script in your terminal. 
+#     BashScripts.com  
+#     Github: https://github.com/BashScripts-com
 #		
-#		The script will ask you for: 
-#			
-#			1) website address, just enter the base domain name (i.e. google.com)
-#			2) how often to check (# of minutes)
+#        Summary: Monitor website uptime/errors using CURL
+#
+#		      Requirements: CURL
+#
+#		      Simply run the script in your terminal. 
+#		
+#		      The script will ask you for: 
+#			          1) website address, just enter the base domain name (i.e. google.com)
+#			          2) how often to check (# of minutes)
 #	
-#		Using the curl command we just get the "response code". Code 200 means OK/NORMAL. Anything else is usually an error. 
-#		Everytime there is an error, we write it to STDOUT (the terminal) and into a file in the Present Working 
-#		Directory (wherever you ran the script) along with the exact time and error code. The script continues in a loop
-#		until you exit (CTRL+C)
+#		      Using the curl command we just get the "response code". Code 200 means OK/NORMAL. Anything else is usually an error. 
+#		      Everytime there is an error, we write it to STDOUT (the terminal) and into a file in the Present Working 
+#		      Directory (wherever you ran the script) along with the exact time and error code. The script continues in a loop
+#		      until you exit (CTRL+C)
 #
 
 
