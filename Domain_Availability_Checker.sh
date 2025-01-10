@@ -1,6 +1,8 @@
 #!/bin/bash
-
-#	BASHSCRIPTS.com
+#
+#        BashScripts.com  
+#        Github: https://github.com/BashScripts-com
+#
 #
 #		Summary: Search for available .COM domains from the command line.
 #		NOTE: This script only works for .COM right now. Let us know if you want us to
