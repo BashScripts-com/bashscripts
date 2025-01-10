@@ -1,8 +1,9 @@
 #!/bin/bash
-
-# ###############  BASHSCRIPTS.com  #################
-# ###################################################
+#
+#   BashScripts.com  
+#   Github: https://github.com/BashScripts-com
 #    
+#
 #    Summary:  Check a directory (recursively) for duplicate files. We do this by getting the MD5SUM hash of every file and grepping for
 #    	       hashes that appear more than once.
 #
