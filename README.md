@@ -19,5 +19,7 @@
 3. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Check_Duplicate_Files.sh">Check Duplicate Files.sh</a></strong> - Check any directory for duplicate files. Use MD5SUM to get the hash of each file and output any duplicates.
   <br><br>
 4. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Nmap_Host_Scan.sh">Nmap Host Scan.sh</a></strong> - Perform a basic "host discovery" scan with nmap on multiple networks and create output files with scan results.
+  <br><br>
+5. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Domain_Availability_Checker.sh">Domain Availability Checker.sh</a></strong> - search for available (unregistered) .COM domains from the command line. Provide a list of domains and the script will do a WHOIS lookup for each name.
   
 </p>
