@@ -24,7 +24,7 @@
   <br><br>
 6. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Generate_File_Hashes.sh">Generate File Hashes.sh</a></strong> - Generate a list of file hashes for a given directory using MD5SUM.
   <br><br>
-7. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Create_LUKS_Container_File.sh">Create LUKS Container File.sh</a></strong> - Create a LUKS-encrypted container file.
+7. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Create_LUKS_Container_File.sh">Create LUKS Container File.sh</a></strong> - Create a LUKS-encrypted container file. Instead of using a separate device (like a hard drive), you can just use a container file on your desktop!
 
   
 </p>
