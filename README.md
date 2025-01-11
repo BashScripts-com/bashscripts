@@ -23,7 +23,8 @@
 5. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Domain_Availability_Checker.sh">Domain Availability Checker.sh</a></strong> - search for available (unregistered) .COM domains from the command line. Provide a list of domains and the script will do a WHOIS lookup for each name.
   <br><br>
 6. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Generate_File_Hashes.sh">Generate File Hashes.sh</a></strong> - Generate a list of file hashes for a given directory using MD5SUM.
-
+  <br><br>
+7. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Create_LUKS_Container_File.sh">Create LUKS Container File.sh</a></strong> - Create a LUKS-encrypted container file.
 
   
 </p>
