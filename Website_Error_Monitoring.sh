@@ -25,14 +25,21 @@ DATE_SHORT="$(date +%d-%b-%Y)"
 RESULTS_FILE="$PWD/website_errors_"$DATE_SHORT".txt"
 
 
-
+echo -e "\n\nStarting Website_Error_Monitoring script ....\n\n"
+sleep 2
 read -p "Enter the website address you want to monitor (example: google.com) " website_address
+sleep 2
 echo -e "\n\nYou entered "$website_address"\n\n"
+sleep 2
 read -p "How often do you want to check (enter # of minutes)? " minutes
+sleep 2
 echo -e "\n\nYou entered "$minutes" minute(s)\n\n"
+sleep 2
 
 echo -e "\n\nBeginning script. Curl'ing "$website_address" every "$minutes" minute(s). Also writing errors to a file in the PWD.\n\n"
+echo -e "\n\nPress CTRL+C when you are finished to exit the script!\n\n"
 
+sleep 3
 
 #convert minutes to seconds
 SLEEP_TIME="$(($minutes * 60))"
