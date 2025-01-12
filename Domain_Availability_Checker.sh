@@ -59,6 +59,7 @@ while read -r line;
     sleep 2
   done < "$domain_name_list"
 
+echo -e "\n\nScript Complete! If any domains were available, they were listed above!\n\n"
 
 
 
