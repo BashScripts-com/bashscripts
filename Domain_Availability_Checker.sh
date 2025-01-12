@@ -28,9 +28,9 @@ DATE="$(date +%d-%b---%H-%M-%S)"
 RESULTS_DIRECTORY="$PWD/domain_availability_script"
 FINAL_OUTPUT="$RESULTS_DIRECTORY"/"$DATE"_final_domain_availability.txt
 
-echo -e "\n\nStarting .COM Domain Lookup scripts .....\n\n"
+echo -e "\n\nStarting .COM Domain Lookup script .....\n\n"
 sleep 3
-read -p "enter the FULL PATH of the FILE with the domains you want to search (i.e. /home/user/domains.txt) " domain_name_list
+read -p "enter FULL PATH of the FILE with the domains you want to search (ex: /home/user/domains.txt) " domain_name_list
 echo -e "\n\n"
 
 sleep 2
