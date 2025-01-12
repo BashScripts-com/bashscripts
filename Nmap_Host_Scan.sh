@@ -20,7 +20,9 @@
 # Manually enter the subnets that you want to scan. Each subnet is a separate item in the array
 subnets=('192.168.1.1/24' '192.168.2.1/24' '192.168.3.1/24' '192.168.10.1/24' '192.168.20.1/24' '192.168.30.1/24' '192.168.40.1/24')
 
-
+echo -e "\n\nStarting NMAP HOST SCAN script. We will use the networks you manually entered into the subnets \
+array (hardcoded into script)\n\n"
+sleep 3
 
 DATE="$(date +%d-%b---%H-%M-%S)"
 RESULTS_DIRECTORY="$PWD/nmap_scan_script/results/${DATE}"
