@@ -32,13 +32,11 @@ FINAL_OUTPUT="$RESULTS_DIRECTORY"/"$DATE"_final_domain_availability.txt
 read -p "enter the FULL PATH of the FILE with the domains you want to search (i.e. /home/user/domains.txt) " domain_name_list
 
 
-2>> "$RESULTS_DIRECTORY"/error_log.txt
-
-
 if [[ ! -d "$RESULTS_DIRECTORY" ]]; then
 	mkdir -m 750 -p "$RESULTS_DIRECTORY"
 fi
 
+2>> "$RESULTS_DIRECTORY"/error_log.txt
 
 
 #write info to results file
