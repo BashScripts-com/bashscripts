@@ -22,9 +22,12 @@
 DATE="$(date +%d-%b-%Y--%H-%M-%S)"
 
 read -p "Which directory do you want hashes for (enter FULL path i.e. /home/user/folder) ?  " DIR_TO_HASH
+sleep 2
+echo -e "\n\n"
+echo -e "\n\nGetting hashes for:  "$DIR_TO_HASH" ......"
+sleep 2
+echo -e "\n\nResults will appear in a file in your PWD (current working directory below)!\n\n"
 
-echo ""
-echo ""
 
 
 HASH_LIST="$PWD/file_hashes_$DATE"
