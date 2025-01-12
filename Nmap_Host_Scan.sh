@@ -64,7 +64,8 @@ for subnet in "${subnets[@]}";
 		echo '' >> "$RESULTS_DIRECTORY"/FINAL_"${filename_subnet}".txt
 	done
 
-
+echo -e "\n\nScript complete! Results will be in a folder called nmap_scan_script in the PWD (current working directory)\n\n"
+sleep 3
 
 
 
