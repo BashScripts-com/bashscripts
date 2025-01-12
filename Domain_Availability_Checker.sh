@@ -28,9 +28,12 @@ DATE="$(date +%d-%b---%H-%M-%S)"
 RESULTS_DIRECTORY="$PWD/domain_availability_script"
 FINAL_OUTPUT="$RESULTS_DIRECTORY"/"$DATE"_final_domain_availability.txt
 
-
+echo -e "\n\nStarting .COM Domain Lookup scripts .....\n\n"
+sleep 3
 read -p "enter the FULL PATH of the FILE with the domains you want to search (i.e. /home/user/domains.txt) " domain_name_list
+echo -e "\n\n"
 
+sleep 2
 
 if [[ ! -d "$RESULTS_DIRECTORY" ]]; then
 	mkdir -m 750 -p "$RESULTS_DIRECTORY"
@@ -41,7 +44,7 @@ fi
 
 #write info to results file
 echo ""
-echo "AVAILABLE DOMAINS:" >> $FINAL_OUTPUT
+echo "AVAILABLE DOMAINS WILL BE SHOWN BELOW:" >> $FINAL_OUTPUT
 echo "" >> $FINAL_OUTPUT
 
 #write info to STDOUT/terminal
