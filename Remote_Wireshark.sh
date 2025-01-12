@@ -18,22 +18,28 @@
 
 WIRESHARK_NAMED_PIPE="/tmp/wireshark_named_pipe"
 
-
+echo ""
 echo "Remote wireshark script starting ..."
 sleep 3
 echo ""
 read -p "What remote device are we SSH'ing into (format: username@ipaddress  ex: username@1.1.1.1)? " device
 echo ""
+sleep 2
 echo "SSH'ing into "$device""
 echo ""
+sleep 2
 read -p "What remote interface should we capture on (eth0, eth1, etc.)? " interface
 echo ""
+sleep 2
 echo "capturing on interface "$interface""
 echo ""
+sleep 2
 read -p "What snaplength should we use (type 0 for no limit)? " snaplength
 echo ""
+sleep 2
 echo "snaplength size is "$snaplength""
 echo ""
+sleep 2
 
 
 read -p "Filter for a specific host ? (enter IP address)(just press ENTER if you don't want a specific host and want all traffic instead) " filter_host
