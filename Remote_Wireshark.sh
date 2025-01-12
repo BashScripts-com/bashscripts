@@ -19,7 +19,7 @@
 WIRESHARK_NAMED_PIPE="/tmp/wireshark_named_pipe"
 
 echo ""
-echo "Remote wireshark script starting ..."
+echo "Remote wireshark script starting ... When you are finished, press CTRL+C after closing Wireshark to fully exit the script!"
 sleep 3
 echo ""
 read -p "What remote device are we SSH'ing into (format: username@ipaddress  ex: username@1.1.1.1)? " device
