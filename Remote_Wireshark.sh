@@ -20,14 +20,18 @@ WIRESHARK_NAMED_PIPE="/tmp/wireshark_named_pipe"
 
 
 echo "Remote wireshark script starting ..."
+sleep 3
 echo ""
 read -p "What remote device are we SSH'ing into (format: username@ipaddress  ex: username@1.1.1.1)? " device
+echo ""
 echo "SSH'ing into "$device""
 echo ""
 read -p "What remote interface should we capture on (eth0, eth1, etc.)? " interface
+echo ""
 echo "capturing on interface "$interface""
 echo ""
 read -p "What snaplength should we use (type 0 for no limit)? " snaplength
+echo ""
 echo "snaplength size is "$snaplength""
 echo ""
 
@@ -47,6 +51,7 @@ fi
 
 echo "starting Wireshark and reading from namedpipe"
 echo ""
+sleep 3
 
 #CHECK IF FILTER_HOST VARIABLE SET, ADJUST TCPDUMP COMMAND ACCORDINGLY
 
@@ -68,8 +73,9 @@ fi
 #remove named pipe
 rm "$WIRESHARK_NAMED_PIPE"
 
+sleep 2
 echo ""
-echo "COMPLETED"
+echo "SCRIPT COMPLETED -- if the script hangs, press CTRL+C to exit and return to your terminal."
 echo ""
-
+sleep 2
 
