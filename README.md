@@ -27,5 +27,7 @@
 7. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Create_LUKS_Container_File.sh">Create LUKS Container File.sh</a></strong> - Create a LUKS-encrypted container file. Instead of using a separate device (like a hard drive), you can just use a container file on your desktop!
   <br><br>
 8. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Pihole_Domains_By_Device.sh">Pihole Domains by Device.sh</a></strong> - Get today's DNS queries from a specific device from your PiHole. Uses SSH to parse today's pihole.log file and display lookup counts.
+  <br><br>
+9. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/HID_Device_Tracking.sh">HID Device Tracking.sh</a></strong> - Monitor USB events (add/remove/change etc.) specifically for "HID" (Human Interface) devices. Useful for keyboard device troubleshooting. Also useful for detecting rogue devices maliciously presenting as HID devices (BadUSB).
   
 </p>
