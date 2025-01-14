@@ -32,14 +32,10 @@ sleep 2
 
 #check for required programs
 if command -v curl > /dev/null 2>&1; then
-	
 	echo -e "\n\nSUCCESS: CURL is installed, continuing ....\n"
-
 else
-	
 	echo -e "\n\nCURL NOT FOUND. You must install it to use this script. Exiting ...\n"
 	exit
-
 fi
 
 sleep 3
