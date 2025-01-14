@@ -19,28 +19,37 @@
 #
 
 
-	echo -e "\n\nPIHOLE LOOKUP script -- get a device's DNS queries from today's pihole.log file"
-	sleep 2
-	echo -e "\n\nWe'll show all DNS lookups in reverse decending order (highest to lowest)\n"
-	sleep 1
-	read -p "Enter the client/device IP or hostname whose DNS lookups you want: "  device_ip
-	echo ""
-	read -p "Enter pihole SSH information (ex: user@x.x.x.x): " pihole_ip
-	sleep 2
-	echo -e "\n\nSearching DNS queries from device: "$device_ip"\n\n"
-	sleep 3
+echo -e "\n\nPIHOLE LOOKUP script -- get a device's DNS queries from today's pihole.log file"
+sleep 2
+echo -e "\n\nWe'll show all DNS lookups in reverse decending order (highest to lowest)\n"
+sleep 1
+read -p "Enter the client/device IP or hostname whose DNS lookups you want: "  device_ip
+echo ""
+read -p "Enter pihole SSH information (ex: user@x.x.x.x): " pihole_ip
 
+sleep 1
+echo -e "\nChecking for required programs ....."
+sleep 2
 
-     #use REV trick to get the 3rd column from the end
-     ssh "$pihole_ip" 'echo -e "\n\nSearching CURRENT DAY pihole logs\n\n"; sudo grep -F "query[" /var/log/pihole/pihole.log \
-	     | sudo grep -F "'$device_ip'" | rev | cut -d" " -f3 | rev | sort | uniq -c | sort -nr; echo -e "\n\n";'
+#check for required programs
+if ssh "$pihole_ip" "command -v pihole"> /dev/null 2>&1; then
 	
+	echo -e "\nSUCCESS: PIHOLE is installed on the remote device, continuing ....\n"
+
+else
+	echo -e "\nPIHOLE NOT FOUND. You must install it on the remote device to use this script. Exiting ...\n"
+	exit
+
+fi
+sleep 2
+echo -e "\nSearching DNS queries from device: "$device_ip"\n"
+sleep 3
 
 
-
-     	sleep 3
-	echo -e "\n\nFINISHED!\n\n"
-
-
-
-
+#use REV trick to get the 3rd column from the end
+ssh "$pihole_ip" 'echo -e "\n\nSearching CURRENT DAY pihole logs\n\n"; sudo grep -F "query[" /var/log/pihole/pihole.log \
+	| sudo grep -F "'$device_ip'" | rev | cut -d" " -f3 | rev | sort | uniq -c | sort -nr; echo -e "\n\n";' ||\
+	echo -e "\n\nERROR: Could not SSH into the device. Something went wrong!\n"
+	
+sleep 3
+echo -e "\n\nFINISHED!\n\n"
