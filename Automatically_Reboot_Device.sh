@@ -51,9 +51,7 @@ sleep 1
 
 #if directory provided does not exist, exit script
 if [[ ! -d "$REBOOT_TIMES_DIRECTORY" ]]; then
-
 	echo -e "\n\nREBOOT_TIMES_DIRECTORY not found. Set this inside the script! This is where we write the reboot dates/times!\n\n"
-
 	exit
 fi
 
@@ -76,7 +74,6 @@ fi
 INTERACTIVE_TERMINAL_PROMPT='(terminal|Terminal|TERMINAL)'
 
 if [[ "$1" =~ $INTERACTIVE_TERMINAL_PROMPT ]]; then
-
 	echo -e "\n\nAuto_Reboot_Device.sh script starting ....."
 	sleep 3
 	echo -e "\n\nThis script will ping a DNS server (OpenDNS) every 60 seconds. If ping fails,"
@@ -94,7 +91,6 @@ if [[ "$1" =~ $INTERACTIVE_TERMINAL_PROMPT ]]; then
 	NUMBER_OF_PINGS_UNTIL_REBOOT="$number_of_pings"
 
     else
-
 	NUMBER_OF_PINGS_UNTIL_REBOOT="$HARDCODED_NUMBER_OF_PINGS"
 
 
