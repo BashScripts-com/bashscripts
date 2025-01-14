@@ -38,7 +38,6 @@ HARDCODED_NUMBER_OF_PINGS="15"
 PING_TARGET="208.67.222.222"
 
 
-
 #check for required programs
 if command -v ping > /dev/null 2>&1; then
 	echo -e "\nSUCCESS: ping is installed on this device, continuing ....\n"
@@ -55,7 +54,6 @@ if [[ ! -d "$REBOOT_TIMES_DIRECTORY" ]]; then
 	exit
 fi
 
-
 DATE="$(date +%d-%b-%Y)"
 
 RESULTS_DIRECTORY="/tmp/uptime_monitoring/results/${DATE}"
@@ -65,11 +63,6 @@ if [[ ! -d "$RESULTS_DIRECTORY" ]]; then
 fi
 
 2>> "$RESULTS_DIRECTORY"/error_log.txt
-
-
-
-
-
 
 INTERACTIVE_TERMINAL_PROMPT='(terminal|Terminal|TERMINAL)'
 
@@ -92,19 +85,12 @@ if [[ "$1" =~ $INTERACTIVE_TERMINAL_PROMPT ]]; then
 
     else
 	NUMBER_OF_PINGS_UNTIL_REBOOT="$HARDCODED_NUMBER_OF_PINGS"
-
-
 fi
-
-
-
-
 
 #sleep for three minutes before starting script, because we auto-start script on router @REBOOT
 #this way we give the router some time (3 minutes) to finish starting up and loading programs, dhcp, etc.
 #we're pinging OpenDNS (208.67.222.222)
 sleep 180
-
 
 #run the ping tests in a continuous loop
 
