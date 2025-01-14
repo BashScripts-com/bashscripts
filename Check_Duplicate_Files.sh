@@ -17,6 +17,15 @@
 
 TEMP_HASH_LIST="/tmp/temp_hash_list.txt"
 
+#check for required programs
+if command -v md5sum > /dev/null 2>&1; then	
+	echo -e "\nSUCCESS: md5sum is installed on this device, continuing ....\n"
+else
+	echo -e "\nmd5sum NOT FOUND. You must install it to use this script. Exiting ...\n"
+	exit
+fi
+sleep 1
+
 echo -e "\n"
 read -p "Enter the directory you want to check: (/the/full/path)  "  directory_to_check
 echo -e "\n\n"
