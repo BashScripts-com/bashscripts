@@ -32,7 +32,7 @@ echo -e "\nChecking for required programs ....."
 sleep 2
 
 #check for required programs
-if ssh "$pihole_ip" "command -v pihole"> /dev/null 2>&1; then
+if ssh "$pihole_ip" "command -v pihole" > /dev/null 2>&1; then
 	echo -e "\nSUCCESS: PIHOLE is installed on the remote device, continuing ....\n"
 else
 	echo -e "\nPIHOLE NOT FOUND. You must install it on the remote device to use this script. Exiting ...\n"
