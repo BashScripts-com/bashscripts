@@ -39,6 +39,14 @@ PING_TARGET="208.67.222.222"
 
 
 
+#check for required programs
+if command -v ping > /dev/null 2>&1; then
+	echo -e "\nSUCCESS: ping is installed on this device, continuing ....\n"
+ else
+	echo -e "\nping NOT FOUND. You must install it to use this script. Exiting ...\n"
+exit
+fi
+sleep 1
 
 
 #if directory provided does not exist, exit script
