@@ -48,7 +48,7 @@ sleep 2
 echo -e "\n\nYou entered "$minutes" minute(s)\n\n"
 sleep 2
 
-echo -e "\n\nBeginning script. Curl'ing "$website_address" every "$minutes" minute(s). Any errors will be show below. Also writing errors to a file in the PWD.\n\n"
+echo -e "\n\nBeginning script. Curl'ing "$website_address" every "$minutes" minute(s). Any errors will be shown below. Also writing errors to a file in the PWD.\n\n"
 sleep 2
 echo -e "\n\nPress CTRL+C when you are finished to exit the script!\n\n"
 
