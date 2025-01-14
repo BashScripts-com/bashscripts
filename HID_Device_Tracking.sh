@@ -22,24 +22,18 @@ sleep 2
 
 #check for required programs
 if command -v sed > /dev/null 2>&1; then
-	
 	echo -e "\nSUCCESS: sed is installed on this device, continuing ....\n"
-
 else
 	echo -e "\nsed NOT FOUND. You must install it to use this script. Exiting ...\n"
 	exit
-
 fi
 sleep 1
 
 if command -v stdbuf > /dev/null 2>&1; then
-	
 	echo -e "\nSUCCESS: stdbuf is installed on this device, continuing ....\n"
-
 else
 	echo -e "\nstdbuf NOT FOUND. You must install it on this device to use this script. Exiting ...\n"
 	exit
-
 fi
 sleep 2
 
