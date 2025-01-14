@@ -21,7 +21,7 @@
 
 DATE="$(date +%d-%b-%Y--%H-%M-%S)"
 
-sleep 2
+sleep 1
 echo -e "\nChecking for required programs ....."
 sleep 2
 
