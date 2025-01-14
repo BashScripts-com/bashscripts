@@ -28,7 +28,7 @@ DATE="$(date +%d-%b---%H-%M-%S)"
 RESULTS_DIRECTORY="$PWD/nmap_scan_script/results/${DATE}"
 
 if [[ ! -d "$RESULTS_DIRECTORY" ]]; then
-	mkdir -m 750 -p "$RESULTS_DIRECTORY"
+	mkdir -p "$RESULTS_DIRECTORY"
 fi
 
 2>> "$RESULTS_DIRECTORY"/error_stats_logs.txt
