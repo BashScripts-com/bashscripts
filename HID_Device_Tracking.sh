@@ -16,7 +16,7 @@
 #
 
 
-sleep 2
+sleep 1
 echo -e "\nChecking for required programs ....."
 sleep 2
 
