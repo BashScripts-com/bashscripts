@@ -51,13 +51,9 @@
 
 	#create the container using dd with zeros
 	if dd if=/dev/zero of=encrypted_container.img bs=1 count=0 seek="$container_size"; then
-	       
 		echo -e "\n\n***** encrypted_container.img created !"
-
 	     else 
-
 		echo -e "\n\n***** ERROR! - exiting script\n\n" && exit
-
 	fi		
 
 
@@ -67,13 +63,9 @@
 
 
 	if cryptsetup luksFormat encrypted_container.img; then
-	       
 		echo -e "\n\n***** encrypted_container.img successfully encrypted!\n\n"
-	       
 	   else	
-			
 		echo -e "\n\nERROR -- exiting\n\n" && exit 
-
 	fi
 
 
@@ -83,13 +75,9 @@
 
 	
 	if sudo cryptsetup luksOpen encrypted_container.img temp_container; then
-
 		echo -e "\n\nencrypted container OPENED and assigned the temporary name "temp_container"\n\n"
-
 	      else
-
 		echo -e "\n\nERROR! - exiting!" && exit
-
 	fi
 
 	sleep 3
@@ -97,13 +85,9 @@
 	sleep 3
 
 	if sudo mkfs.ext4 /dev/mapper/temp_container; then
-
 		echo -e "\n\n***** EXT4 filesystem successfully created on /dev/mapper/temp_container\n\n"
-		
 	      else
-
 		echo -e "\n\nERROR - exiting!\n\n" && exit
-
 	fi
 
 
