@@ -58,7 +58,7 @@ if command -v wireshark > /dev/null 2>&1; then
 fi
 sleep 1
 
-if ssh "$device" "command -v tcpdump"> /dev/null 2>&1; then
+if ssh "$device" "command -v tcpdump" > /dev/null 2>&1; then
 	echo -e "\nSUCCESS: TCPDUMP is installed on the remote device, continuing ....\n"
 else
 	echo -e "\nTCPDUMP NOT FOUND. You must install it on the remote device to use this script. Exiting ...\n"
