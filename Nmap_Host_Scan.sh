@@ -27,13 +27,10 @@ sleep 2
 
 #check for required programs
 if command -v nmap > /dev/null 2>&1; then
-	
 	echo -e "\nSUCCESS: nmap is installed on this device, continuing ....\n"
-
 else
 	echo -e "\nnmap NOT FOUND. You must install it to use this script. Exiting ...\n"
-	exit
-
+exit
 fi
 sleep 1
 
