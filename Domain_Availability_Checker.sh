@@ -28,6 +28,25 @@ DATE="$(date +%d-%b---%H-%M-%S)"
 RESULTS_DIRECTORY="$PWD/domain_availability_script"
 FINAL_OUTPUT="$RESULTS_DIRECTORY"/"$DATE"_final_domain_availability.txt
 
+
+sleep 1
+echo -e "\nChecking for required programs ....."
+sleep 2
+
+#check for required programs
+if command -v whois > /dev/null 2>&1; then
+	
+	echo -e "\nSUCCESS: whois is installed on this device, continuing ....\n"
+
+else
+	echo -e "\nwhois NOT FOUND. You must install it to use this script. Exiting ...\n"
+	exit
+
+fi
+
+sleep 1
+
+
 echo -e "\n\nStarting .COM Domain Lookup script .....\n\n"
 sleep 3
 read -p "enter FULL PATH of the FILE with the domains you want to search (ex: /home/user/domains.txt) " domain_name_list
