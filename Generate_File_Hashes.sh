@@ -27,13 +27,10 @@ sleep 2
 
 #check for required programs
 if command -v md5sum > /dev/null 2>&1; then
-	
 	echo -e "\nSUCCESS: md5sum is installed on this device, continuing ....\n"
-
 else
 	echo -e "\nmd5sum NOT FOUND. You must install it to use this script. Exiting ...\n"
 	exit
-
 fi
 sleep 1
 
@@ -51,9 +48,7 @@ HASH_LIST="$PWD/file_hashes_$DATE"
 
 #test if directory exists, otherwise exit
 if [[ ! -d "$DIR_TO_HASH" ]]; then
-	
 	echo -e "\n\nNOT A VALID DIRECTORY ... exiting script!\n\n"
-	
 	exit
 fi
 
