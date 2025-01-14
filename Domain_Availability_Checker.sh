@@ -36,7 +36,7 @@ echo -e "\n\n"
 sleep 2
 
 if [[ ! -d "$RESULTS_DIRECTORY" ]]; then
-	mkdir -m 750 -p "$RESULTS_DIRECTORY"
+	mkdir -p "$RESULTS_DIRECTORY"
 fi
 
 2>> "$RESULTS_DIRECTORY"/error_log.txt
