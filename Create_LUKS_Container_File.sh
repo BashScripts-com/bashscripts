@@ -17,6 +17,30 @@
 #
 #
 
+
+	sleep 1
+	echo -e "\nChecking for required programs ....."
+	sleep 2
+
+	#check for required programs
+	if command -v cryptsetup > /dev/null 2>&1; then
+		echo -e "\nSUCCESS: cryptsetup is installed on this device, continuing ....\n"
+	else
+		echo -e "\ncryptsetup NOT FOUND. You must install it to use this script. Exiting ...\n"
+	exit
+	fi
+
+	sleep 1
+
+	if command -v dd > /dev/null 2>&1; then
+		echo -e "\nSUCCESS: dd is installed on this device, continuing ....\n"
+
+	else
+		echo -e "\ndd NOT FOUND. You must install it on this device to use this script. Exiting ...\n"
+	exit
+	fi
+	sleep 2
+
 	echo -e "\n\n***** Creating an empty container called "encrypted_container.img" with DD.\n\n"
 	sleep 3
 	read -p "***** How big do you want the container to be? (ex: 100M, 500M, 2G, etc.) " container_size
