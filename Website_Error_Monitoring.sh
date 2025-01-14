@@ -25,8 +25,24 @@ DATE_SHORT="$(date +%d-%b-%Y)"
 RESULTS_FILE="$PWD/website_errors_"$DATE_SHORT".txt"
 
 
-echo -e "\n\nStarting Website_Error_Monitoring script ....\n\n"
+echo -e "\n\nStarting Website_Error_Monitoring script ....\n"
 sleep 2
+echo -e "\nChecking for required programs ....."
+sleep 2
+
+#check for required programs
+if command -v curl > /dev/null 2>&1; then
+	
+	echo -e "\n\nSUCCESS: CURL is installed, continuing ....\n"
+
+else
+	
+	echo -e "\n\nCURL NOT FOUND. You must install it to use this script. Exiting ...\n"
+	exit
+
+fi
+
+sleep 3
 read -p "Enter the website address you want to monitor (example: google.com) " website_address
 sleep 2
 echo -e "\n\nYou entered "$website_address"\n\n"
@@ -36,7 +52,8 @@ sleep 2
 echo -e "\n\nYou entered "$minutes" minute(s)\n\n"
 sleep 2
 
-echo -e "\n\nBeginning script. Curl'ing "$website_address" every "$minutes" minute(s). Also writing errors to a file in the PWD.\n\n"
+echo -e "\n\nBeginning script. Curl'ing "$website_address" every "$minutes" minute(s). Any errors will be show below. Also writing errors to a file in the PWD.\n\n"
+sleep 2
 echo -e "\n\nPress CTRL+C when you are finished to exit the script!\n\n"
 
 sleep 3
