@@ -92,14 +92,14 @@ sleep 3
 if [[ ! -z "$filter_host" ]]; then
 
          ssh "$device" "/usr/sbin/tcpdump -i '"$interface"' -s'"$snaplength"' -n not port 22 and host '"$filter_host"' -w -" > \
-		 "$WIRESHARK_NAMED_PIPE" 2> /dev/null 
+		 "$WIRESHARK_NAMED_PIPE" 2> /dev/null || echo -e "\n\nERROR: Could not SSH into the device. Something went wrong!\n"
 
 else
 
 ## NOTE: looks like we cannot use '-t' because wireshark ERRORS when -t is added ****
 #apparently we DON'T need "sudo" if we use the full binary path
 ssh "$device" "/usr/sbin/tcpdump -i '"$interface"' -s'"$snaplength"' -n not port 22 -w -" > \
-	"$WIRESHARK_NAMED_PIPE" 2> /dev/null
+	"$WIRESHARK_NAMED_PIPE" 2> /dev/null || echo -e "\n\nERROR: Could not SSH into the device. Something went wrong!\n"
 
 fi
 
