@@ -18,6 +18,8 @@ TEMP_HASH_LIST="/tmp/temp_hash_list.txt"
 sleep 1
 echo -e "\n\nStarting Check_Duplicate_Files script .....\n"
 sleep 2
+echo -e "\nChecking for required programs ....."
+sleep 2
 
 #check for required programs
 if command -v md5sum > /dev/null 2>&1; then	
