@@ -13,9 +13,11 @@
 #      It will then output any duplicate files to the terminal (STDOUT).
 
 
-
-
 TEMP_HASH_LIST="/tmp/temp_hash_list.txt"
+
+sleep 1
+echo -e "\n\nStarting Check_Duplicate_Files script .....\n"
+sleep 2
 
 #check for required programs
 if command -v md5sum > /dev/null 2>&1; then	
@@ -28,6 +30,7 @@ sleep 1
 
 echo -e "\n"
 read -p "Enter the directory you want to check: (/the/full/path)  "  directory_to_check
+sleep 2
 echo -e "\n\n"
 echo -e "checking "$directory_to_check" for duplicate files. Any duplicates will show below!\n\n"
 
