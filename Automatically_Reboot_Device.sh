@@ -38,6 +38,10 @@ HARDCODED_NUMBER_OF_PINGS="15"
 PING_TARGET="208.67.222.222"
 
 
+sleep 1
+echo -e "\nChecking for required programs ....."
+sleep 2
+
 #check for required programs
 if command -v ping > /dev/null 2>&1; then
 	echo -e "\nSUCCESS: ping is installed on this device, continuing ....\n"
