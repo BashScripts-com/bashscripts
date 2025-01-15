@@ -21,7 +21,7 @@
 
 echo -e "\n\nPIHOLE LOOKUP script -- get a device's DNS queries from today's pihole.log file"
 sleep 2
-echo -e "\n\nWe'll show all DNS lookups in reverse decending order (highest to lowest)\n"
+echo -e "\n\nWe'll show all DNS lookups in reverse descending order (highest to lowest)\n"
 sleep 1
 read -p "Enter the client/device IP or hostname whose DNS lookups you want: "  device_ip
 echo ""
