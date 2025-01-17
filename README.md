@@ -31,5 +31,7 @@
 9. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/HID_Device_Tracking.sh">HID Device Tracking.sh</a></strong> - Monitor USB events (add/remove/change etc.) specifically for "HID" (Human Interface) devices. Useful for keyboard device troubleshooting. Also useful for detecting rogue devices maliciously presenting as HID devices (BadUSB).
   <br><br>
 10. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Automatically_Reboot_Device.sh">Automatically Reboot Device.sh</a></strong> - Monitor a device for internet connectivity using "ping". If there is still no internet after X pings (you specify the #), automatically reboot the device. Run this script directly on the device you want to monitor/reboot.
+<br><br>
+11. <strong><a href="https://github.com/BashScripts-com/bashscripts/blob/main/Get_Directory_Sizes.sh">Get Directory Sizes.sh</a></strong> - get the size of a single directory, or a list of the sizes of that directory AND all directories/folders inside of it (recursively)
 
 </p>
